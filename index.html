@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-toggle">
+                <button class="btn active" id="login-btn">Login</button>
+                <button class="btn" id="signup-btn">Sign Up</button>
+            </div>
+
+            <div class="form-content">
+                <!-- Login Form -->
+                <form id="login-form" class="form active">
+                    <h2>Login</h2>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+
+                <!-- Sign Up Form -->
+                <form id="signup-form" class="form">
+                    <h2>Sign Up</h2>
+                    <label for="new-username">Username</label>
+                    <input type="text" id="new-username" name="username" placeholder="Choose a username" required>
+                    <label for="new-password">Password</label>
+                    <input type="password" id="new-password" name="password" placeholder="Create a password" required>
+                    <button type="submit" class="btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
